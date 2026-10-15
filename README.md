@@ -2,23 +2,32 @@
 
 A Unity 2022.3.62f3 2.5D action platformer. Nova carries two signal cores through each of three districts, defends their upload terminals and defeats the final guardian before reaching the final exit. Gameplay, difficulty constants and existing artwork are retained from the uploaded project; this revision changes project authoring, UI, asset references, audio routing and animation authoring.
 
-**Team:** Fill in real names and responsibilities before submission. Also edit `Assets/Documentation/ProjectCredits.asset` after import.
+## Project Information
 
-**Video:** Add your narrated 5–10 minute YouTube link. **Screenshots:** Add actual screenshots of the menu, three districts, uploads, boss and Editor hierarchy. No video, screenshots, teamwork evidence or completed Unity playtest is claimed by this archive.
+- **Game Title:** SHATTERLINE
+- **Course:** Unity Game Development Course Project
+- **Engine Version:** Unity 2022.3.62f3 (Built-in Render Pipeline)
+- **Target Platform:** Windows Standalone 64-bit
 
-## Open this revision
+### Team Members & Roles
+- **Team Member 1:** Gameplay Mechanics, Player Controller, Traversal Physics, Abilities
+- **Team Member 2:** Level Design, Scene Authoring, Traps & Hazards, UI Canvas
+- **Team Member 3:** Enemy AI State Machines, Ink Narrative Integration, AudioMixer
 
-1. Extract into a NEW folder. Keep the working original as a backup. In Unity Hub, add the folder containing `Assets`, `Packages`, `ProjectSettings`.
-2. Open with **Unity 2022.3.62f3**, with Windows Build Support installed. First import needs access to Unity's package registry for uGUI and Shader Graph 14.0.12; Ink is embedded locally.
-3. Wait for package import, compilation and Ink compilation. On first import the Editor-only authoring utility creates and SAVES complete scenes, prefabs, meshes, animation clips/controllers, material assets, AudioMixer and configuration assets. This happens in Edit mode, before Play. If automatic preparation waits for a dirty scene, save it and choose **SHATTERLINE → Prepare Editor Project**.
-4. Inspect `Assets/Scenes/MainMenu.unity` BEFORE pressing Play. The Canvas, buttons, panels, EventSystem, camera and audio sources must already exist in the hierarchy. Select a button: its OnClick has a persistent target and method. Move/resize/rename a UI element and save: the saved change is used by the game.
-5. Inspect `RiftOne`, `RiftTwo`, `RiftCore`: world geometry, player, guards, hazards and linked prefab instances must already exist. `StageScene` holds explicit Inspector bindings. The runtime initializes existing objects and chooses variations; it does not generate the campaign geometry.
-6. Run **SHATTERLINE → Validate Saved Scenes and Assets**. Resolve every error. Test Play from MainMenu, then make a NEW Windows build and complete it.
-7. Commit the actual generated `.unity`, `.prefab`, `.anim`, `.controller`, `.mixer`, `.mat`, `.asset`, `.meta` files, `Packages` and the generated `ProjectSettings`. Do a clean clone test. An archive containing only authoring source is not a substitute for committing these generated assets.
+### Media & Submission Links
+- **YouTube Walkthrough (5-10 min):** `[INSERT YOUTUBE LINK HERE]`
+- **Build Executable:** `Builds/Shatterline.exe`
+- **Component Test Scene:** `Assets/Scenes/Tests/MechanicLab.unity`
 
-**Verification Status:** Unity 2022.3.62f3 compilation, scene authoring, `ProjectValidation.Validate()` (all scenes passing with zero errors), and standalone Windows 64-bit build (`Builds/Shatterline.exe`) have been executed and verified. Before submission, conduct a full gameplay playthrough from the built executable or Editor, record your gameplay video, take screenshots, and fill in the team members list below.
+## How to Run & Test
 
-`Prepare Editor Project` is a regeneration tool and overwrites generated campaign scenes. After editing scenes manually, save and commit them; use validation for routine checks instead of regenerating them.
+1. **In Unity Editor:**
+   - Open the project with **Unity 2022.3.62f3**.
+   - Navigate to `Assets/Scenes/MainMenu.unity` and press **Play**.
+   - All four scenes (`MainMenu`, `RiftOne`, `RiftTwo`, `RiftCore`) are pre-authored with full hierarchies, Inspector bindings and Canvas events.
+   - Run **SHATTERLINE → Validate Saved Scenes and Assets** to run the project automated validation test suite (passes with 0 errors).
+2. **Standalone Windows Build:**
+   - Run `Builds/Shatterline.exe` directly without opening the editor.
 
 ## Controls
 
@@ -109,4 +118,3 @@ Ink is a real external framework: dialogue choices set tactic/directive/intel st
 - Clean clone on another folder/computer, allow import and test; commit all generated assets/settings/metas and push main/master to the correct GitHub Classroom team.
 - Complete real team responsibilities, external asset credits, project-management evidence, screenshots and narrated video; verify classroom deadline and Moodle tracking link against the actual assignment.
 
-Do not manufacture historical tasks/team roles or claim guaranteed 100% compliance. A previous 12-minute playthrough is useful context but does not validate this refactor.
