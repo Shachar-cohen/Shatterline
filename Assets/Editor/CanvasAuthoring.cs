@@ -70,8 +70,12 @@ public static class CanvasAuthoring
     {
         var rect = Rect(parent, name, x, y, w, 20); var back = rect.gameObject.AddComponent<Image>(); back.color = new Color(.25f, .3f, .38f);
         var slider = rect.gameObject.AddComponent<Slider>(); slider.minValue = 0; slider.maxValue = 1;
-        var fill = Rect(rect, "Fill", 0, 0, w, 20); var fillImage = fill.gameObject.AddComponent<Image>(); fillImage.color = Orange;
-        var handle = Rect(rect, "Handle", 0, 0, 16, 24); var handleImage = handle.gameObject.AddComponent<Image>(); handleImage.color = Color.white;
+        var fill = Rect(rect, "Fill", 0, 0, 0, 0); var fillImage = fill.gameObject.AddComponent<Image>(); fillImage.color = Orange;
+        fill.anchorMin = Vector2.zero; fill.anchorMax = Vector2.one; fill.pivot = new Vector2(0.5f, 0.5f);
+        fill.anchoredPosition = Vector2.zero; fill.sizeDelta = Vector2.zero;
+        var handle = Rect(rect, "Handle", 0, 0, 16, 4); var handleImage = handle.gameObject.AddComponent<Image>(); handleImage.color = Color.white;
+        handle.anchorMin = Vector2.zero; handle.anchorMax = Vector2.one; handle.pivot = new Vector2(0.5f, 0.5f);
+        handle.anchoredPosition = Vector2.zero; handle.sizeDelta = new Vector2(16, 4);
         slider.fillRect = fill; slider.handleRect = handle; slider.targetGraphic = handleImage;
         slider.SetValueWithoutNotify(.7f); UnityEventTools.AddPersistentListener(slider.onValueChanged, action); return slider;
     }

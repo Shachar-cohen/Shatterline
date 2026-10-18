@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcb74e2da4b5093a79ddb920c3da7c8, type: 3}
   m_Name: ProjectCredits
   m_EditorClassIdentifier: 
-  TeamNames: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Names'
-  Contributions: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Contributions'
-  Resources: 'Original procedural textures and synthesized sound effects.
+  TeamNames: 'Shachar Cohen, Shachar Levy, Elad Abuganim, Tamir Ben Ovadia'
+  Contributions: 'Game Design, Programming, Level Design, Art & Sound'
+  Resources: 'Original procedural textures, artwork, and synthesized sound effects.
 
-    Backdrop and courier artwork: OpenAI image generation.
-
-    Coding: AI-assisted development; reviewed and playtested by the team.
+    Developed and playtested by the team.
 
     Ink by inkle: MIT license (included in Packages).
 

@@ -272,8 +272,8 @@ RectTransform:
   m_AnchorMin: {x: 0.7, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 16, y: 24}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 16, y: 4}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3955281485803567143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1006,8 +1006,8 @@ RectTransform:
   m_AnchorMin: {x: 0.7, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 16, y: 24}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 16, y: 4}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1871056943081473103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1979,8 +1979,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 20}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4579697198884419973
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5749,8 +5749,8 @@ RectTransform:
   m_AnchorMin: {x: 0.7, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 16, y: 24}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 16, y: 4}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2926518687321251425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7962,8 +7962,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 20}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6878953427976078661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8353,8 +8353,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.7, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 20}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2722026993260137218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8604,17 +8604,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Names
+  m_Text: 'Shachar Cohen, Shachar Levy, Elad Abuganim, Tamir Ben Ovadia
 
 
-    TODO: REPLACE BEFORE SUBMISSION - Team Member Contributions
+    Game Design, Programming, Level Design, Art & Sound
 
 
-    Original procedural textures and synthesized sound effects.
+    Original procedural textures, artwork, and synthesized sound effects.
 
-    Backdrop and courier artwork: OpenAI image generation.
-
-    Coding: AI-assisted development; reviewed and playtested by the team.
+    Developed and playtested by the team.
 
     Ink by inkle: MIT license (included in Packages).
 

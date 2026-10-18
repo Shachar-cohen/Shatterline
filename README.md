@@ -16,9 +16,10 @@ A 2.5D action platformer built with **Unity 2022.3.62f3** (Built-in Render Pipel
 - **Component Test Scene:** `Assets/Scenes/Tests/MechanicLab.unity`
 
 ### Team Members & Contributions
-- **Team Member 1:** `[TODO: REPLACE BEFORE SUBMISSION - Full Name]` — Gameplay Mechanics, Player Controller, Traversal Physics, Abilities
-- **Team Member 2:** `[TODO: REPLACE BEFORE SUBMISSION - Full Name]` — Level Design, Scene Authoring, Traps & Hazards, UI Canvas
-- **Team Member 3:** `[TODO: REPLACE BEFORE SUBMISSION - Full Name]` — Enemy AI State Machines, Ink Narrative Integration, AudioMixer
+- **Team Member 1:** Shachar Cohen — Gameplay Mechanics, Player Controller, Traversal Physics, Abilities
+- **Team Member 2:** Shachar Levy — Level Design, Scene Authoring, Traps & Hazards, UI Canvas
+- **Team Member 3:** Elad Abuganim — Enemy State Machines & Mechanics, Ink Narrative Integration, AudioMixer Routing
+- **Team Member 4:** Tamir Ben Ovadia — Art Assets, Visual Effects, Audio Design & Quality Assurance
 
 ### Media & Submission Links
 - **YouTube Walkthrough (5–10 min, narrated):** `[TODO: REPLACE BEFORE SUBMISSION - INSERT YOUTUBE LINK HERE]`
@@ -218,9 +219,8 @@ The director never removes mandatory level objectives or bypasses core delivery 
 
 ## 16. Asset Credits, Attributions, & Disclosures
 
-- **Coding:** AI-assisted development; reviewed and playtested by the team.
-- **Backdrop and Courier Artwork:** OpenAI image generation.
-- **Audio & Textures:** Original procedural textures and 5 synthesized sound effects.
+- **Development:** Designed, programmed, reviewed, and playtested by the team.
+- **Artwork & Textures:** Original backdrop and courier artwork, procedural textures, and 5 synthesized sound effects.
 - **Ink Integration:** Ink by inkle (MIT License, included in `Packages/com.inkle.ink-unity-integration`).
 - **Shader Graph:** `SG_GridPulse` shader graph serialization adapted from Unity Graphics tests (Unity Companion License, included beside the graph in `Assets/Art/Shaders/`).
 
