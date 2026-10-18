@@ -22,11 +22,8 @@ A 2.5D action platformer built with **Unity 2022.3.62f3** (Built-in Render Pipel
 - **Team Member 4:** Tamir Ben Ovadia — Art Assets, Visual Effects, Audio Design & Quality Assurance
 
 ### Media & Submission Links
-- **YouTube Walkthrough (5–10 min, narrated):** `[TODO: REPLACE BEFORE SUBMISSION - INSERT YOUTUBE LINK HERE]`
-- **Project Management Evidence & Tracker:** `[TODO: REPLACE BEFORE SUBMISSION - INSERT TRELLO / JIRA / GITHUB PROJECT LINK HERE]`
-- **Required Screenshots:** `[TODO: REPLACE BEFORE SUBMISSION - ATTACH / LINK SCREENSHOTS OF ALL 3 ACTS, MENUS, AND END SCREENS]`
-- **Measured Playthrough Duration:** `[TODO: REPLACE BEFORE SUBMISSION - RECORD ACTUAL PLAYTHROUGH TIME, TARGET: 5–15 MINUTES]`
-
+- **YouTube Walkthrough (5–10 min, narrated):** `[TODO: REPLACE BEFORE SUBMISSION - INSERT YOUTUBE LINK HERE]`\
+  
 ---
 
 ## 2. How to Open, Run, and Test
