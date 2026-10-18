@@ -379,7 +379,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -390,15 +390,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A/D MOVE  \xB7  W TAP/HOLD/DOUBLE JUMP  \xB7  S CROUCH  \xB7  R CLIMB\nSPACE
-    DASH  \xB7  F DRONE (25 EN/BLOCK)  \xB7  T UNSTUCK\nSHIFT POWER  \xB7  LEFT FIRE 
-    \xB7  RIGHT ARC  \xB7  Q SHIELD  \xB7  E WAVE\n\nTap W for a low jump; hold for
-    a high jump. Release quickly and press again for the double jump.\n\nCarry two
-    cyan cores to terminals per act. Protect each terminal until 100% and clear its
-    attackers. Break the three relays and defeat the Act III guardian to open the
-    final route.\n\nF deploys or recalls the drone: -25% movement, 25 energy per
-    intercept, 8-second cooldown. LOW/HIGH grids pulse transparently while OPEN and
-    block while LIVE."
+  m_Text: "A/D MOVE  \xB7  W TAP/HOLD/DOUBLE JUMP  \xB7  S CROUCH (AIR: FAST DROP)\n\
+    R CLIMB UP  \xB7  DOWN ARROW CLIMB DOWN  \xB7  SPACE DASH  \xB7  ESC PAUSE\n\
+    LEFT FIRE  \xB7  RIGHT ARC (II+)  \xB7  Q SHIELD (II+)  \xB7  E WAVE (III+)\n\
+    F DRONE (25 EN/BLOCK)  \xB7  SHIFT POWER  \xB7  T UNSTUCK\n\nTap W for a low jump;\
+    \ hold for a high jump. Release quickly and press again for the double jump. Press\
+    \ S airborne to fast drop.\n\nInside climb zones, press R to climb up and Down\
+    \ Arrow to descend. Press ESC to pause or resume at any time.\n\nCarry two cyan\
+    \ cores to terminals per act. Protect each terminal until 100% and clear its attackers.\
+    \ Break the three relays and defeat the Act III guardian to open the final route.\n\
+    \nF deploys or recalls the drone: -25% movement, 25 energy per intercept, 8-second\
+    \ cooldown. LOW/HIGH grids pulse transparently while OPEN and block while LIVE."
 --- !u!1 &597659274918707642
 GameObject:
   m_ObjectHideFlags: 0
@@ -8602,27 +8604,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Add the actual team names before submission.
+  m_Text: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Names
 
 
-    Add each member''s
-    actual contribution before submission.
+    TODO: REPLACE BEFORE SUBMISSION - Team Member Contributions
 
 
-    Original procedural textures and
-    synthesized sound effects.
+    Original procedural textures and synthesized sound effects.
 
-    Backdrop and courier artwork: Custom digital
-    illustrations and sprite design.
+    Backdrop and courier artwork: OpenAI image generation.
 
-    Coding: Developed, reviewed and playtested
-    by the team.
+    Coding: AI-assisted development; reviewed and playtested by the team.
 
     Ink by inkle: MIT license (included in Packages).
 
-    Shader
-    Graph serialization adapted from Unity Graphics tests: Unity Companion License
-    (included beside the graph).'
+    Shader Graph serialization adapted from Unity Graphics tests: Unity Companion License (included beside the graph).'
 --- !u!1 &8529656566213898263
 GameObject:
   m_ObjectHideFlags: 0

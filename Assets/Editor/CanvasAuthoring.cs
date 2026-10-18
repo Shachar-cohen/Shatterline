@@ -117,7 +117,7 @@ public static class CanvasAuthoring
         Button(home, "Leaderboard", "LEADERBOARD", 0, 371, 335, 50, menu.ShowLeaderboard);
         Button(home, "Exit", "EXIT", 0, 426, 335, 50, menu.ExitGame);
         var instructions = Rect(root, "How to Play", 81, 257, 1120, 455); menu.InstructionsPanel = instructions.gameObject;
-        Label(instructions, "Controls", GameHud.ControlsText + "\n\nTap W for a low jump; hold for a high jump. Release quickly and press again for the double jump.\n\nCarry two cyan cores to terminals per act. Protect each terminal until 100% and clear its attackers. Break the three relays and defeat the Act III guardian to open the final route.\n\nF deploys or recalls the drone: -25% movement, 25 energy per intercept, 8-second cooldown. LOW/HIGH grids pulse transparently while OPEN and block while LIVE.", 0, 0, 1120, 370, 18);
+        Label(instructions, "Controls", GameHud.ControlsText + "\n\nTap W for a low jump; hold for a high jump. Release quickly and press again for the double jump. Press S airborne to fast drop.\n\nInside climb zones, press R to climb up and Down Arrow to descend. Press ESC to pause or resume at any time.\n\nCarry two cyan cores to terminals per act. Protect each terminal until 100% and clear its attackers. Break the three relays and defeat the Act III guardian to open the final route.\n\nF deploys or recalls the drone: -25% movement, 25 energy per intercept, 8-second cooldown. LOW/HIGH grids pulse transparently while OPEN and block while LIVE.", 0, 0, 1120, 370, 16);
         Button(instructions, "Back", "BACK", 0, 394, 335, 52, menu.ShowHome);
         var settings = Rect(root, "Settings", 81, 257, 1120, 455); menu.SettingsPanel = settings.gameObject;
         menu.MasterLabel = Label(settings, "Master label", "MASTER", 0, 20, 260, 30, 21);
@@ -157,8 +157,9 @@ public static class CanvasAuthoring
         hud.HintText = Label(hint, "Hint", "", 10, 5, 400, 38, 14);
         var boss = Rect(root, "Guardian health", 0, 0, 220, 48); boss.anchorMin = boss.anchorMax = new Vector2(1, 1); boss.pivot = new Vector2(1, 1); boss.anchoredPosition = new Vector2(-16, -15); boss.gameObject.AddComponent<Image>().color = Dark; hud.BossPanel = boss.gameObject;
         hud.BossText = Label(boss, "Health", "GUARDIAN 16/16", 10, 3, 205, 23, 14); hud.BossFill = Bar(boss, "Boss HP", 10, 28, 198, 7, Color.red);
-        var controls = Rect(root, "Bottom controls", 18, 0, 1160, 37); controls.anchorMin = controls.anchorMax = new Vector2(0, 0); controls.pivot = new Vector2(0, 0); controls.anchoredPosition = new Vector2(18, 16); controls.gameObject.AddComponent<Image>().color = Dark;
-        Label(controls, "Controls", "A/D MOVE   W TAP/HOLD/DOUBLE   R CLIMB   S CROUCH   SPACE DASH   F DRONE   SHIFT SPECIAL   LEFT FIRE   RIGHT ARC (II+)   Q SHIELD (II+)   E WAVE (III+)", 9, 4, 1144, 30, 14);
+        var controls = Rect(root, "Bottom controls", 18, 0, 1244, 37); controls.anchorMin = controls.anchorMax = new Vector2(0, 0); controls.pivot = new Vector2(0, 0); controls.anchoredPosition = new Vector2(18, 16); controls.gameObject.AddComponent<Image>().color = Dark;
+        var bottomText = Label(controls, "Controls", "A/D MOVE   W TAP/HOLD/DOUBLE   S CROUCH (AIR: FAST DROP)   R CLIMB / DOWN ARROW DESCEND   SPACE DASH   ESC PAUSE   F DRONE   SHIFT SPECIAL   LEFT FIRE   RIGHT ARC (II+)   Q SHIELD (II+)   E WAVE (III+)", 9, 4, 1226, 30, 13);
+        bottomText.resizeTextForBestFit = true; bottomText.resizeTextMinSize = 10; bottomText.resizeTextMaxSize = 13;
         var pause = CenterPanel(root, "Pause or Game Over", 620, 540); hud.PausePanel = pause.gameObject;
         hud.PauseTitle = Label(pause, "Title", "PAUSED", 30, 20, 560, 55, 31);
         hud.PauseText = Label(pause, "Description", GameHud.ControlsText, 30, 80, 560, 78, 14);

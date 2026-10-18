@@ -4515,7 +4515,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 18, y: 16}
-  m_SizeDelta: {x: 1160, y: 37}
+  m_SizeDelta: {x: 1244, y: 37}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &302363256682922364
 CanvasRenderer:
@@ -11877,9 +11877,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A/D MOVE  \xB7  W TAP/HOLD/DOUBLE JUMP  \xB7  S CROUCH  \xB7  R CLIMB\nSPACE
-    DASH  \xB7  F DRONE (25 EN/BLOCK)  \xB7  T UNSTUCK\nSHIFT POWER  \xB7  LEFT FIRE 
-    \xB7  RIGHT ARC  \xB7  Q SHIELD  \xB7  E WAVE"
+  m_Text: "A/D MOVE  \xB7  W TAP/HOLD/DOUBLE JUMP  \xB7  S CROUCH (AIR: FAST DROP)\n\
+    R CLIMB UP  \xB7  DOWN ARROW CLIMB DOWN  \xB7  SPACE DASH  \xB7  ESC PAUSE\n\
+    LEFT FIRE  \xB7  RIGHT ARC (II+)  \xB7  Q SHIELD (II+)  \xB7  E WAVE (III+)\n\
+    F DRONE (25 EN/BLOCK)  \xB7  SHIFT POWER  \xB7  T UNSTUCK"
 --- !u!1 &8540953014833200714
 GameObject:
   m_ObjectHideFlags: 0
@@ -12230,7 +12231,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 9, y: -4}
-  m_SizeDelta: {x: 1144, y: 30}
+  m_SizeDelta: {x: 1226, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3188032430381753857
 CanvasRenderer:
@@ -12262,19 +12263,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 13
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A/D MOVE   W TAP/HOLD/DOUBLE   R CLIMB   S CROUCH   SPACE DASH   F DRONE  
-    SHIFT SPECIAL   LEFT FIRE   RIGHT ARC (II+)   Q SHIELD (II+)   E WAVE (III+)
+  m_Text: A/D MOVE   W TAP/HOLD/DOUBLE   S CROUCH (AIR: FAST DROP)   R CLIMB / DOWN
+    ARROW DESCEND   SPACE DASH   ESC PAUSE   F DRONE   SHIFT SPECIAL   LEFT FIRE  
+    RIGHT ARC (II+)   Q SHIELD (II+)   E WAVE (III+)
 --- !u!1 &8568390837658687393
 GameObject:
   m_ObjectHideFlags: 0

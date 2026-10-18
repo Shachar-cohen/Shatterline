@@ -20,7 +20,9 @@ namespace Shatterline
         }
         public static void Quit()
         {
-            PlayerPrefs.Save(); RestoreClock();
+            PlayerPrefs.Save();
+            RestoreClock();
+
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else

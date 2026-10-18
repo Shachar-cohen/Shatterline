@@ -12,18 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcb74e2da4b5093a79ddb920c3da7c8, type: 3}
   m_Name: ProjectCredits
   m_EditorClassIdentifier: 
-  TeamNames: Add the actual team names before submission.
-  Contributions: Add each member's actual contribution before submission.
+  TeamNames: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Names'
+  Contributions: 'TODO: REPLACE BEFORE SUBMISSION - Team Member Contributions'
   Resources: 'Original procedural textures and synthesized sound effects.
 
-    Backdrop
-    and courier artwork: Custom digital illustrations and sprite design.
+    Backdrop and courier artwork: OpenAI image generation.
 
-    Coding: Developed,
-    reviewed and playtested by the team.
+    Coding: AI-assisted development; reviewed and playtested by the team.
 
-    Ink by inkle: MIT license (included
-    in Packages).
+    Ink by inkle: MIT license (included in Packages).
 
-    Shader Graph serialization adapted from Unity Graphics tests:
-    Unity Companion License (included beside the graph).'
+    Shader Graph serialization adapted from Unity Graphics tests: Unity Companion License (included beside the graph).'

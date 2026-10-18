@@ -74,7 +74,11 @@ namespace Shatterline
             }
             ErrorPanel.SetActive(!string.IsNullOrEmpty(state.Error)); ErrorText.text = state.Error;
         }
-        public const string ControlsText = "A/D MOVE  ·  W TAP/HOLD/DOUBLE JUMP  ·  S CROUCH  ·  R CLIMB\nSPACE DASH  ·  F DRONE (25 EN/BLOCK)  ·  T UNSTUCK\nSHIFT POWER  ·  LEFT FIRE  ·  RIGHT ARC  ·  Q SHIELD  ·  E WAVE";
+        public const string ControlsText =
+            "A/D MOVE  ·  W TAP/HOLD/DOUBLE JUMP  ·  S CROUCH (AIR: FAST DROP)\n" +
+            "R CLIMB UP  ·  DOWN ARROW CLIMB DOWN  ·  SPACE DASH  ·  ESC PAUSE\n" +
+            "LEFT FIRE  ·  RIGHT ARC (II+)  ·  Q SHIELD (II+)  ·  E WAVE (III+)\n" +
+            "F DRONE (25 EN/BLOCK)  ·  SHIFT POWER  ·  T UNSTUCK";
         public void ResumeGame() { if (Game != null) Game.ResumeGame(); }
         public void RestartRun() { if (Game != null) Game.RestartRun(); }
         public void ReturnToMenu() { if (Game != null) Game.ReturnToMenu(); }

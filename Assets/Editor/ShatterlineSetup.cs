@@ -96,6 +96,30 @@ public static class ShatterlineSetup
             throw new InvalidOperationException("Build failed with result: " + report.summary.result);
         Debug.Log("SHATTERLINE build succeeded: " + exePath);
     }
+    [MenuItem("SHATTERLINE/Build Development Standalone")]
+    public static void BuildDevelopmentPlayer()
+    {
+        string buildDir = "Builds/Dev";
+        Directory.CreateDirectory(buildDir);
+        string exePath = Path.Combine(buildDir, "Shatterline_Dev.exe");
+        string[] scenes = {
+            SceneRoot + "MainMenu.unity",
+            SceneRoot + "RiftOne.unity",
+            SceneRoot + "RiftTwo.unity",
+            SceneRoot + "RiftCore.unity"
+        };
+        BuildPlayerOptions options = new BuildPlayerOptions
+        {
+            scenes = scenes,
+            locationPathName = exePath,
+            target = BuildTarget.StandaloneWindows64,
+            options = BuildOptions.Development
+        };
+        var report = BuildPipeline.BuildPlayer(options);
+        if (report.summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
+            throw new InvalidOperationException("Build failed with result: " + report.summary.result);
+        Debug.Log("SHATTERLINE development build succeeded: " + exePath);
+    }
     private static void CreateMenu(AudioConfiguration audio, ProjectCredits credits)
     {
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);

@@ -238,8 +238,10 @@ namespace Shatterline
                     OpenMission();
                     return;
                 }
-                bool ready = ShardsHere >= 2 && RunState.Tactic != 0 &&
-                    (inkStory == null || RunState.Directive != 0) && (Level != 3 || BossDown);
+                bool ready = ShardsHere >= 2 &&
+                    (inkStory == null || RunState.Tactic != 0) &&
+                    (inkStory == null || RunState.Directive != 0) &&
+                    (Level != 3 || BossDown);
                 if (ready)
                 {
                     if (Level == 3) Win(); else NextLevel();
@@ -248,8 +250,8 @@ namespace Shatterline
                 {
                     gateHintUntil = Time.time + 2.5f;
                     Flash(ShardsHere < 2 ? "GATE LOCKED: DELIVER SIGNAL CORES (" + ShardsHere + "/2). CHECK EXIT CACHE" :
-                        RunState.Tactic == 0 ? "GATE LOCKED: TOUCH THE GREEN RELAY AND PICK AN UPGRADE" :
-                        RunState.Directive == 0 ? "GATE LOCKED: CHOOSE THE SECOND RELAY DIRECTIVE" :
+                        (inkStory != null && RunState.Tactic == 0) ? "GATE LOCKED: TOUCH THE GREEN RELAY AND PICK AN UPGRADE" :
+                        (inkStory != null && RunState.Directive == 0) ? "GATE LOCKED: CHOOSE THE SECOND RELAY DIRECTIVE" :
                         "GATE LOCKED: DEFEAT THE GUARDIAN", 2.4f);
                 }
                 // A locked portal returns the player to its approach instead of hiding an impassable wall
@@ -290,8 +292,8 @@ namespace Shatterline
                 return "DELIVER CORE  /  " + coreHealth + "% INTEGRITY";
             if (ShardsHere >= 2)
             {
-                if (RunState.Tactic == 0) return "CHOOSE RELAY UPGRADE";
-                if (RunState.Directive == 0) return "CHOOSE MISSION DIRECTIVE";
+                if (RunState.Tactic == 0 && inkStory != null) return "CHOOSE RELAY UPGRADE";
+                if (RunState.Directive == 0 && inkStory != null) return "CHOOSE MISSION DIRECTIVE";
                 if (Level == 3 && RelaysLeft > 0) return "DESTROY RELAYS  " + RelaysLeft + " LEFT";
                 if (Level == 3 && !BossDown) return "DEFEAT THE GUARDIAN";
                 return "REACH THE EXIT GATE";
